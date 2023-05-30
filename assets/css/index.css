@@ -14,10 +14,11 @@ h1, h2, h3, h4, h5, a{
 
 p{
     color: #b8b9bc;
+    font-size: 15px;
 }
 
 header {
-    padding: 40px 30px 40px 30px;
+    padding: 40px 30px 30px 30px;
 }
 
 nav{
@@ -27,10 +28,10 @@ nav{
 }
 
 main{
-    height: calc(100vh - 105px) ;
+    height: calc(100vh - 95px) ;
 }
 .container {
-    padding: 40px 30px 0px 30px;
+    padding: 30px 30px 0px 30px;
     margin: 0 auto;
     max-width: 450px;
 }
@@ -42,7 +43,6 @@ main{
 
 .main article {
     text-align: center;
-    
 }
 
 h1{
@@ -53,6 +53,7 @@ h1{
 
 .main p {
     padding: 8px;
+    line-height: 1.5;
 }
 
 .btn{
@@ -70,3 +71,59 @@ h1{
     background-color:#5267DF;
     color: #FFFFFF;
 }
+
+/* Features Part1 */
+
+.feature{
+
+    display: flex;
+    flex-direction: column;
+    padding: 10px 30px 10px 30px;
+    margin: 0 auto;
+    max-width: 450px;
+}
+
+.feature article {
+    text-align: center;
+}
+
+h2{
+    font-size: 25px;
+    font-weight: 500;
+    padding: 10px 0px 25px 0px;
+}
+
+.feature p {
+    padding: 0px 0px 20px 0px;
+    line-height: 1.5;
+}
+
+.container-button{
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid #b8b9bc;
+    border-top: 1px solid #b8b9bc;
+}
+
+.middle-button {
+    border-bottom: 1px solid #b8b9bc;
+    border-top: 1px solid #b8b9bc;
+}
+
+h3{
+    padding: 16px 0px;
+    margin: 0 auto;
+    font-weight: 400;
+    width: 180px;
+    border-bottom: 5px solid transparent;
+}
+
+h3:hover{
+    cursor: pointer;
+    border-bottom: 5px solid #FA5757;
+}
+
+.feature img{   
+    padding: 30px 0px 30px 0px;
+}
+
