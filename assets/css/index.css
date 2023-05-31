@@ -61,7 +61,7 @@ h1{
 .btn{
     border: none;
     background-color: #F7F7F6;
-    padding: 10px;
+    padding: 15px 11px;
     margin: 30px 5px 15px 5px;
     border-radius: 5px;
     font-size: 16px;
@@ -74,18 +74,26 @@ h1{
     color: #FFFFFF;
 }
 
-/* Features Part1 */
+/* Features */
+
+.space{
+    padding-top: 100px;
+}
 
 .feature{
-
+    /* display: none !important; */
     display: flex;
     flex-direction: column;
-    padding: 10px 30px 10px 30px;
+    padding: 50px 30px 10px 30px;
     margin: 0 auto;
     max-width: 450px;
 }
 
-.feature article {
+.feature img{
+    margin: 30px 0px 40px 0px;
+}
+
+.data {
     text-align: center;
 }
 
@@ -95,8 +103,8 @@ h2{
     padding: 10px 0px 25px 0px;
 }
 
-.feature p {
-    padding: 0px 0px 20px 0px;
+.data p {
+    padding: 0px 0px 50px 0px;
     line-height: 1.5;
 }
 
@@ -132,7 +140,8 @@ h3:hover{
 /* Download */
 
 .download{
-    padding: 30px 30px 40px 30px;
+    /* display: none !important; */
+    padding: 100px 30px 40px 30px;
     display: flex;
     flex-direction: column;
     text-align: center; 
@@ -143,7 +152,7 @@ h3:hover{
     flex-direction: column;
     width: 100%;
     max-width: 350px;
-    padding-top: 40px;
+    padding-top: 0px;
     margin: 0 auto;
 }
 
@@ -170,4 +179,38 @@ h3:hover{
 .browser button{
     margin: 20px 0px 10px 0px;
     padding: 10px 20px 10px 20px ;
+}
+
+/* Questions */
+
+.question{
+    padding: 120px 30px 40px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container-question{
+    margin-top: 10px;
+}
+
+.container-question div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #b8b9bc;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.container-question h4{
+    width: 95%;
+    font-weight: 400;
+    font-size: 15px;
+    padding: 30px 10px;
+}
+
+.question button{
+    margin-top:50px;
+    padding: 18px 25px;
 }
