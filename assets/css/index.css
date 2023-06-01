@@ -184,6 +184,7 @@ h3:hover{
 /* Questions */
 
 .question{
+    /* display: none !important; */
     padding: 120px 30px 40px 30px;
     display: flex;
     flex-direction: column;
@@ -214,3 +215,68 @@ h3:hover{
     margin-top:50px;
     padding: 18px 25px;
 }
+
+/* Contact */
+
+.contact{
+    background-color: #5267DF;
+    padding: 120px 30px 40px 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.data input{
+    border-radius: 10px;
+    border: none;
+    padding: 18px;
+
+}
+
+.data div{
+    display: flex;
+    flex-direction: column;
+    gap:20px
+}
+
+.btn-contact{
+    border-radius:10px;
+    padding: 18px;
+    border: none;
+    background-color: #FA5757;
+ 
+}
+
+.contact .data h2, .contact .data button, .contact .data p {
+    color: #FFFFFF;
+}
+
+/* Footer */
+
+footer{
+    background-color: #252A45;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    text-align: center;
+   padding: 40px 0px 40px 0px;
+    
+}
+
+footer div{
+    padding: 16px 0px;
+    
+}
+footer h3{
+    color:#FAFDFF;
+    font-size: 18px;
+}
+
+.media{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap:50px;
+    align-items: center;
+}
+
