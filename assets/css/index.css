@@ -90,7 +90,7 @@ h1{
 }
 
 .feature img{
-    margin: 30px 0px 40px 0px;
+    margin: 10px 0px 40px 0px;
 }
 
 .data {
@@ -152,7 +152,6 @@ h3:hover{
     flex-direction: column;
     width: 100%;
     max-width: 350px;
-    padding-top: 0px;
     margin: 0 auto;
 }
 
@@ -184,15 +183,10 @@ h3:hover{
 /* Questions */
 
 .question{
-    /* display: none !important; */
-    padding: 120px 30px 40px 30px;
+    padding: 80px 30px 110px 30px;
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-.container-question{
-    margin-top: 10px;
 }
 
 .container-question div{
@@ -208,34 +202,46 @@ h3:hover{
     width: 95%;
     font-weight: 400;
     font-size: 15px;
-    padding: 30px 10px;
+    padding: 20px 10px;
 }
 
 .question button{
     margin-top:50px;
-    padding: 18px 25px;
+    padding: 16px 25px;
 }
 
 /* Contact */
 
 .contact{
     background-color: #5267DF;
-    padding: 120px 30px 40px 30px;
+    padding: 80px 30px 65px 30px;
     display: flex;
     flex-direction: column;
+}
+
+.contact .data p{
+    letter-spacing: 3px;
+    padding-bottom: 15px;
+    color: #FFFFFF;
+}
+
+.contact .data h2{
+    font-size:24px;
+    color: #FFFFFF;
 }
 
 .data input{
     border-radius: 10px;
     border: none;
     padding: 18px;
-
+    margin-bottom: 20px;
+    font-size: 15px;
+    color: #b8b9bc;
 }
 
 .data div{
     display: flex;
     flex-direction: column;
-    gap:20px
 }
 
 .btn-contact{
@@ -246,7 +252,7 @@ h3:hover{
  
 }
 
-.contact .data h2, .contact .data button, .contact .data p {
+.contact .data button{
     color: #FFFFFF;
 }
 
@@ -259,7 +265,7 @@ footer{
     align-items: center;
     margin: 0 auto;
     text-align: center;
-   padding: 40px 0px 40px 0px;
+    padding: 40px 0px 75px 0px;
     
 }
 
@@ -267,16 +273,16 @@ footer div{
     padding: 16px 0px;
     
 }
+
 footer h3{
     color:#FAFDFF;
-    font-size: 18px;
+    font-size: 16px;
 }
 
 .media{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    gap:50px;
+    gap:40px;
     align-items: center;
 }
-
