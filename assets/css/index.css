@@ -128,7 +128,7 @@ h3{
     border-bottom: 5px solid transparent;
 }
 
-h3:hover{
+.container-button h3:hover{
     cursor: pointer;
     border-bottom: 5px solid #FA5757;
 }
@@ -237,6 +237,11 @@ h3:hover{
     margin-bottom: 20px;
     font-size: 15px;
     color: #b8b9bc;
+    border: 3px solid transparent;
+}
+
+.data input:invalid {
+    border: 3px solid #FA5757;
 }
 
 .data div{
