@@ -62,11 +62,11 @@ main div img{
 }
 
 .data p{
-    padding: 0px 0px 10px 0px; 
+    padding: 0px 10px 10px 10px; 
     line-height: 1.5;
     max-width: 450px;
-    
-    /* letter-spacing: 1px; */
+    width: 85%;
+    /* letter-spacing: 1.5px; */
 }
 
 .data div{
@@ -231,6 +231,7 @@ h3{
     .data p{
        padding: 0px;
        padding-bottom: 15px;
+       letter-spacing: 0.5px;
     }
 
     .left{
@@ -238,8 +239,8 @@ h3{
     }
 
     .data h1{
-        font-size: 36px;
-        letter-spacing: 2px;
+        font-size: 30px;
+        letter-spacing: 1.8px;
         max-width: 450px;
         padding-bottom: 15px;
     }
