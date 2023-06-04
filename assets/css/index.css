@@ -172,7 +172,46 @@ h3{
     padding-bottom: 30px;
 }
 
+.download{
+    /* display: none !important; */
+    padding: 100px 30px 40px 30px;
+    display: flex;
+    flex-direction: column;
+    text-align: center; 
+}
 
+.browser{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 350px;
+    margin: 0 auto;
+}
+
+.browser article{
+    border-radius: 10px;
+    box-shadow: #DFDDDD 0px 4px 12px;
+    margin: 20px;
+    padding: 45px 0px 15px 0px; 
+    width: 80%;
+    max-width: 260px;
+    margin: 20px auto;
+}
+
+.browser h3{
+    padding: 25px 0px 10px 0px;
+    font-weight: 500;
+}
+
+.browser p{
+    border-bottom: 3px dotted #DFDDDD;
+    padding-bottom: 35px;
+}
+
+.browser button{
+    margin: 20px 0px 10px 0px;
+    padding: 10px 20px 10px 20px ;
+}
 
 @media (min-width: 900px) {
    
@@ -332,6 +371,7 @@ h3{
 .detail .data p {
     max-width: 480px;
 }
+
 
 
 }
