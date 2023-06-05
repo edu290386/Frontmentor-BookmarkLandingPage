@@ -28,14 +28,19 @@ p{
 /* Header */
 
 header {
-    padding: 10px 30px 10px 30px;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    flex-direction: row;
+    justify-content: center;
     position: sticky;
     background-color: #FFFFFF;
     top:0;
     z-index: 10;
+}
+header div {
+    padding: 10px 30px 10px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 ul {
@@ -239,6 +244,12 @@ h3{
     padding: 16px 25px;
 }
 
+.container-question div img:hover{
+    transform: rotate(180deg);
+    filter: invert(48%) sepia(53%) saturate(3690%) hue-rotate(329deg) brightness(98%) contrast(96%); 
+    cursor: pointer;
+}
+
 /* contact */
 
 .contact{
@@ -262,8 +273,21 @@ h3{
     line-height: 1.5;
 }
 
-.contact input:invalid {
+.email-input:invalid {
     border: 3px solid #FA5757;
+}
+
+.email-input:focus {
+    outline: none;    
+}
+
+.email-input::after {
+    content: "Invalid email address";
+    color: red;
+    font-size: 12px;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
 }
 
 .contact div{
@@ -350,8 +374,9 @@ footer div:first-child{
 
     /* Header */
 
-    header{
+    header div{
         width: 85%;
+        text-align: center;
         margin: 0 auto;
         padding: 30px 0px;
         max-width: 1200px;
@@ -431,12 +456,14 @@ footer div:first-child{
     .white:hover{
         border: 2px solid #5f5f68;
         color: #5f5f68;
+        cursor: pointer;
     }
     
      .purple:hover{
         border:2px solid #5267DF;
         background-color: #FFFFFF;
         color: #5267DF;
+        cursor: pointer;
     }
 
     .buttons{
@@ -602,7 +629,8 @@ footer div:first-child{
 
     footer div h3:hover, .media div:hover{
         color: #FA5757;
-        filter: invert(48%) sepia(53%) saturate(3690%) hue-rotate(329deg) brightness(98%) contrast(96%);
+        filter: invert(48%) sepia(53%) saturate(3690%) hue-rotate(329deg) brightness(98%) contrast(96%); 
+        cursor: pointer;
     }
 
     footer div:first-child{
