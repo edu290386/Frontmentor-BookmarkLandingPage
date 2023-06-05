@@ -24,25 +24,23 @@
                 <li class="login"">LOGIN</li>
             </ul>
         </nav>
-        <div class="hamburger">
+        <div class="hamburguer">
             <img width="18px" height="18px" src="./assets/img/icon-hamburger.svg" alt="">
         </div>
     </header>
     <main>
-        <div>
-            <img src="./assets/img/illustration-hero.svg" alt="">
-        </div>    
-        <article class="data left">
+        <img src="./assets/img/illustration-hero.svg" alt="">  
+        <article class="data-left">
                 <h1>A Simple Bookmark Manager</h1>
                 <p>A clean and simple interface to organize your favourite websites. Open a new browser tab and see your sites load instantly. Try it for free.</p>
-                <div>
-                    <button class="btn" id="purple">Get it on Chrome</button>
-                    <button class="btn" id="white">Get it on Firefox</button>
+                <div class="buttons">
+                    <button class="btn purple">Get it on Chrome</button>
+                    <button class="btn white">Get it on Firefox</button>
                 </div>
         </article>
     </main>
     <section class="feature">
-        <article class="data center">
+        <article class="data-center">
             <h2>Features</h2>
             <p>Our aim is to make it quick and easy for you to access your favourite websites. Your bookmarks sync between your devices so you can access them on the go.</p>
         </article>
@@ -53,43 +51,90 @@
             <div class="last-buttons"><h3>Easy Sharing</h3></div>
         </div>
         <div class="detail">
-            <div>
-                <img src="./assets/img/illustration-features-tab-1.svg" alt="">
-            </div>
-            <article class="data left">
+            <img src="./assets/img/illustration-features-tab-1.svg" alt="">
+            <article class="data-left">
                     <h2>Bookmark in one click</h2>
                     <p>Organize your bookmarks however you like. Our simple drag-and-drop interface gives you complete control over how you manage your favourite sites.</p>
+                    <button class="btn purple">More info</button>
             </article> 
         </div>
     </section>
-    <section>
-        <div class="download">
-            <article class="data">
-                <h2>Download the extension</h2>
-                <p>We’ve got more browsers in the pipeline. Please do let us know if you’ve got a favourite you’d like us to prioritize.</p>
+    <section class="download">
+        <article class="data-center">
+            <h2>Download the extension</h2>
+            <p>We’ve got more browsers in the pipeline. Please do let us know if you’ve got a favourite you’d like us to prioritize.</p>
+        </article>
+        <div class="browser">
+            <article>
+                <img src="./assets/img/logo-chrome.svg" alt="">
+                <h3>Add to Chrome</h3>
+                <p>Minimum version 62</p>
+                <img class="dotted-line"src="./assets/img/bg-dots.svg" alt="">
+                <button class="btn purple">Add & Install Extension</button>
             </article>
-            <div class="browser">
-                <article>
-                    <img src="./assets/img/logo-chrome.svg" alt="">
-                    <h3>Add to Chrome</h3>
-                    <p>Minimum version 62</p>
-                    <button class="btn btn-purple">Add & Install Extension</button>
-                </article>
-                <article>
-                    <img src="./assets/img/logo-firefox.svg" alt="">
-                    <h3>Add to Firefox</h3>
-                    <p>Minimum version 55</p>
-                    <button class="btn btn-purple">Add & Install Extension</button>
-                </article>
-                <article>
-                    <img src="./assets/img/logo-opera.svg" alt="">
-                    <h3>Add to Opera</h3>
-                    <p>Minimum version 46</p>
-                    <button class="btn btn-purple">Add & Install Extension</button>
-                </article>
+            <article class="second">
+                <img src="./assets/img/logo-firefox.svg" alt="">
+                <h3>Add to Firefox</h3>
+                <p>Minimum version 55</p>
+                <img class="dotted-line" src="./assets/img/bg-dots.svg" alt="">
+                <button class="btn purple">Add & Install Extension</button>
+            </article>
+            <article class="third">
+                <img src="./assets/img/logo-opera.svg" alt="">
+                <h3>Add to Opera</h3>
+                <p>Minimum version 46</p>
+                <img class="dotted-line" src="./assets/img/bg-dots.svg" alt="">
+                <button class="btn purple">Add & Install Extension</button>
+            </article>
+        </div>
+    </section>
+    <section class="question">
+            <article class="data-center">
+                <h2>Frequently Asked Questions</h2>
+                <p>Here are some of our FAQs. If you have any other questions you’d like answered please feel free to email us.</p>
+            </article>
+            <div class="container-question">
+                <div>
+                    <h4>What is Bookmark?</h4>
+                    <img src="./assets/img/icon-arrow.svg" alt="">
+                </div>
+                <div>
+                    <h4>How can I request a new browser?</h4>
+                    <img src="./assets/img/icon-arrow.svg" alt="">
+                </div>
+                <div>
+                    <h4>Is there a mobile app?</h4>
+                    <img src="./assets/img/icon-arrow.svg" alt="">
+                </div>
+                <div>
+                    <h4>What about other Chromium browsers?</h4>
+                    <img src="./assets/img/icon-arrow.svg" alt="">
+                </div>    
+            </div>
+            <div>
+                <button class="btn purple">More info</button>
             </div>
         </div>
     </section>
-    
+    <section class="contact">
+        <p>35,000+ ALREADY JOINED</p>
+        <h2>Stay up-to-date with what we’re doing</h2>
+        <div>
+            <input type="email" placeholder="Enter your email address">
+            <button class="btn-contact">Contact Us</button>
+        </div>        
+    </section>
+    <footer>
+        <div>
+            <img src="./assets/logo-bookmark.svg" alt="">
+            <h3>FEATURES</h3> 
+            <h3>PRICING</h3>     
+            <h3>CONTACT</h3>
+        </div>
+        <div class="media">
+            <img src="./assets/img/icon-facebook.svg" alt="">
+            <img src="./assets/img/icon-twitter.svg" alt="">
+        </div>
+</footer>
 </body>
 </html>
