@@ -49,7 +49,6 @@ main {
 }
 
  main img{
-    border: 1px solid salmon;
     max-width: 450px;
     width: 100%;
     padding-bottom: 50px;
@@ -80,8 +79,6 @@ main {
     line-height: 1.5;
     letter-spacing: 0.5px;
 }
-
-
 
 .buttons{
     display: flex;
@@ -114,7 +111,7 @@ main {
 
 .feature{
     padding: 150px 0px 0px 0px;
-    border: 1px solid salmon;
+    border: 1px salmon solid;
 }
 
 .detail{
@@ -124,9 +121,8 @@ main {
 }
 
 .detail img{
-    border: 1px solid salmon;
     max-width: 450px;
-    width: 100%;
+    width: 85%;
     padding-bottom:10px ;
 }
 
@@ -155,20 +151,17 @@ h3{
 .first-button h3{
     border-bottom: 5px solid #FA5757;
     color: #000000;
-    /* border: 1px solid salmon; */
 }
 
 .last-buttons {
     border-bottom: 1px solid #b8b9bc;
     border-top: 1px solid #b8b9bc;
     color: #93939a;
-    /* border: 1px solid salmon; */
 }
 
-.last-buttons h3:hover{
+.container-question h3:hover, .last-buttons h3:hover{
     cursor: pointer;
     color: #FA5757;
-
 }
 
 /* Download */
@@ -180,14 +173,14 @@ h3{
     text-align: center;
     align-items: center;
     margin: 0 auto;
+    padding: 150px 0px 0px 0px;
 }
 
 .browser{
-    border: 1px salmon solid;
+
     display: flex;
     flex-direction: column;
     width: 90%;
-    /* align-items: center; */
 }
 
 .browser article{
@@ -196,7 +189,7 @@ h3{
     margin: 20px;
     padding: 45px 0px 15px 0px; 
     width: 90%;
-    max-width: 260px;
+    max-width: 250px;
     margin: 20px auto;
 }
 
@@ -217,8 +210,7 @@ h3{
 /* Questions */
 
 .question{
-    /* display: none !important; */
-    padding: 80px 0px 110px 0px;
+    padding: 150px 0px 120px 0px;
     border: 1px salmon solid;
     margin: 0 auto;
     text-align: center;
@@ -231,25 +223,21 @@ h3{
     border-bottom: 1px solid #b8b9bc;
     max-width: 450px;
     margin: 0 auto;
-    width: 100%;
+    width: 90%;
     text-align: start;
-    border: 1px solid salmon;
 }
 
-.container-question h4{
+.container-question h3{
     width: 95%;
     font-weight: 400;
-    font-size: 15px;
-    padding: 20px 10px;
+    font-size: 17px;
+    padding: 20px 0px;
 }
 
-.question button{
-  
+.question button{ 
     margin-top:50px;
     padding: 16px 25px;
 }
-
-
 
 /* contact */
 
@@ -360,9 +348,10 @@ footer h3{
     /* Header */
 
     header{
-        width: 80%;
+        width: 85%;
         margin: 0 auto;
         padding: 30px 0px;
+        max-width: 1200px;
     }
 
     ul{
@@ -405,7 +394,7 @@ footer h3{
         justify-content: space-around;
         padding: 0px 0px;
         max-width: 1200px;
-        width: 80%;
+        width: 85%;
         margin: 0 auto;
     }
 
@@ -432,6 +421,7 @@ footer h3{
         max-width: 600px;
         min-width: 450px;
         width: 100%;
+        margin-top:60px;
     }
 
     .white:hover{
@@ -458,8 +448,9 @@ footer h3{
     .feature{
         height: 100vh;
         max-width: 1200px;
-        padding: 10px 0px;
+        padding: 0px 0px 10px 0px;
         margin: 0 auto;
+        width: 85%;
     }
 
     .feature .data-center p{
@@ -481,7 +472,7 @@ footer h3{
         flex-direction: row;
         max-width: 1200px;
         justify-content: space-between;
-        border: 1px solid salmon;
+        border-top: 1px solid transparent;
     }
 
     .container-button div{
@@ -511,30 +502,55 @@ footer h3{
 
 /* Download */
 
-.download {
-    max-width: 1200px;
-}
+    .download {
+        height: 100vh;
+        max-width: 1200px;
+        width: 85%;
+        padding: 10px 0px 0px 0px;
+    } 
+
+    .download .data-center p{
+        width: 45%;
+        margin: 0 auto;
+    } 
+
     .browser{
         flex-direction: row;
         max-width: 900px;
+       
     }
 
     .browser {
         align-items: flex-start;
+       
+        width: 100%;
+    }
+
+    .browser article {
+        width: 100%;
+        min-width: 100px;
     }
 
     .browser .second{
-        margin-top: 50px;
+        margin-top: 60px;
     }
 
     .browser .third {
-        margin-top: 70px; 
+        margin-top: 80px; 
     }
 
 /* Question */
     .question{
-    max-width: 1200px ;
+        height: 100vh;
+        max-width: 1200px ;
+        width: 85%;
+        padding: 10px 20px 0px 20px;
     }
+
+    .question .data-center p{
+        width: 45%;
+        margin: 0 auto;
+    } 
 
     .container-question div{
         
