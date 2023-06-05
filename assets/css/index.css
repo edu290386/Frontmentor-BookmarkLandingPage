@@ -28,10 +28,14 @@ p{
 /* Header */
 
 header {
-    padding: 30px 30px 60px 30px;
+    padding: 10px 30px 10px 30px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: sticky;
+    background-color: #FFFFFF;
+    top:0;
+    z-index: 10;
 }
 
 ul {
@@ -45,7 +49,6 @@ main {
     flex-direction: column;
     align-items: center;
     margin: 0 auto;
-    border: 1px solid salmon;
 }
 
  main img{
@@ -111,7 +114,6 @@ main {
 
 .feature{
     padding: 150px 0px 0px 0px;
-    border: 1px salmon solid;
 }
 
 .detail{
@@ -167,7 +169,6 @@ h3{
 /* Download */
 
 .download{
-    border: 1px salmon solid;
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -211,7 +212,6 @@ h3{
 
 .question{
     padding: 150px 0px 120px 0px;
-    border: 1px salmon solid;
     margin: 0 auto;
     text-align: center;
 }
@@ -242,24 +242,25 @@ h3{
 /* contact */
 
 .contact{
-    /* display: none !important; */
     background-color: #5267DF;
-    padding: 80px 30px 65px 30px;
+    padding: 80px 30px 80px 30px;
     text-align: center;
 }
 
 .contact  p{
-    letter-spacing: 3px;
-    padding-bottom: 15px;
+    letter-spacing: 2.5px;
     color: #FFFFFF;
 }
 
 .contact h2{
     font-size:20px;
+    max-width: 280px;
+    margin: 0 auto;
     color: #FFFFFF;
+    padding: 30px 0px;
+    letter-spacing: 3px;
+    line-height: 1.5;
 }
-
-
 
 .contact input:invalid {
     border: 3px solid #FA5757;
@@ -278,8 +279,6 @@ h3{
     border: none;
     background-color: #FA5757;
     color: #FFFFFF;
-    /* width: 100%; */
-    /* max-width: 440px; */
 }
 
 .contact div input{
@@ -296,15 +295,16 @@ h3{
 /* Footer */
 
 footer{
-    /* display: none !important; */
     background-color: #252A45;
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* margin: 0 auto; */
-    /* text-align: center; */
-    padding: 40px 0px 75px 0px;
+    padding: 70px 0px 70px 0px;
+}
 
+footer div h3{
+    padding: 20px 0px;
+    color:#FAFDFF;
 }
 
 footer div:first-child{
@@ -312,20 +312,23 @@ footer div:first-child{
     flex-direction: column;
 }
 
-footer h3{
-    color:#FAFDFF;
-    font-size: 16px;
-    border: 0px solid transparent;
+.logo{
+    width: 150px;
+    height: 25px;
+    margin-bottom: 30px;
 }
 
 .media{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    gap:40px;
     align-items: center;
+    padding: 25px 0px;
 }
 
+.media img{
+    margin: 0px 10px;
+}
 
 @media (min-width: 900px) {
     
@@ -371,10 +374,11 @@ footer h3{
         border: 2px solid transparent;
     }
 
-    .login:hover{
+    .btn-contact:hover, .login:hover{
         cursor: pointer;
         border: 2px solid #FA5757;
         background-color: #FFFFFF;
+        color: #FA5757;
     }
 
     li:hover{
@@ -517,12 +521,10 @@ footer h3{
     .browser{
         flex-direction: row;
         max-width: 900px;
-       
     }
 
     .browser {
         align-items: flex-start;
-       
         width: 100%;
     }
 
@@ -540,6 +542,7 @@ footer h3{
     }
 
 /* Question */
+
     .question{
         height: 100vh;
         max-width: 1200px ;
@@ -553,12 +556,18 @@ footer h3{
     } 
 
     .container-question div{
-        
         max-width: 500px;
-        
     }
 
     /* Contact */
+
+    .contact h2 {
+        max-width: 600px;
+        min-width: 280px;
+        width: 24%;
+        margin: 0 auto;
+        letter-spacing: 1.5px;
+    }
 
     .contact div{
         flex-direction: row;
@@ -579,16 +588,31 @@ footer h3{
 
 /* Footer */
 
-footer{
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 20px 120px;
-}
+    footer{
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 120px;
+    }
 
-footer div:first-child{
-    flex-direction: row;
-    width: 100px;
-    gap: 60px;
-}
+    footer div h3{
+        padding: 0px 0px;
+        max-width: 600px;
+    }
 
+    footer div h3:hover, .media div:hover{
+        color: #FA5757;
+        filter: invert(48%) sepia(53%) saturate(3690%) hue-rotate(329deg) brightness(98%) contrast(96%);
+    }
+
+    footer div:first-child{
+        flex-direction: row;
+        gap: 50px;
+        align-items: center;
+        max-width: 600px;
+    }
+
+    .logo{
+        margin-bottom: 0px;
+    }
 }
