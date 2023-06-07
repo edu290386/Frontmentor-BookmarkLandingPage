@@ -27,17 +27,19 @@ p{
 
 /* Header */
 
-header {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+/* Header */
+
+header{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    /* box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px; */
     position: sticky;
     background-color: #FFFFFF;
     top:0;
     z-index: 10;
 }
-header div {
-    padding: 10px 30px 10px 30px;
+
+.container-header{
+    padding: 20px 30px 20px 30px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -137,7 +139,7 @@ main {
     display: none;
 }
 
-h3{
+.container-button h3{
     padding: 8px 0px;
     margin: 0 auto;
     font-weight: 400;
@@ -329,6 +331,8 @@ footer{
 footer div h3{
     padding: 20px 0px;
     color:#FAFDFF;
+    font-size: 17px;
+    font-weight: 300;
 }
 
 footer div:first-child{
@@ -363,22 +367,16 @@ footer div:first-child{
     h2{
         font-size: 28px;
     }
-    
-    h3{
-        font-size: 20px
-    }
-    
+        
     p{
         font-size: 16px;
     }
 
     /* Header */
 
-    header div{
+    .container-header{
         width: 85%;
-        text-align: center;
         margin: 0 auto;
-        padding: 30px 0px;
         max-width: 1200px;
     }
 
@@ -636,7 +634,6 @@ footer div:first-child{
     footer div:first-child{
         flex-direction: row;
         gap: 50px;
-        align-items: center;
         max-width: 600px;
     }
 

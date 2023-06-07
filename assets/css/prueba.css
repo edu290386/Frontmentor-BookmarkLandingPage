@@ -7,21 +7,36 @@
 }
 
 h1{
-    font-size: 24px;
+    font-size: 28px;
     font-weight: bold;
     color: #22263c;
 }
 
+h2{
+    font-size: 24px;
+}
+
+h3{
+    font-size: 20px
+}
+
 p{
-    font-size: 14px;
+    font-size: 16px;
     color: #93939a;
 }
 
 /* Header */
 
-header {
-    /* display: none; */
-    padding: 40px 30px 30px 30px;
+header{
+    border: 2px solid rgba(31, 106, 180, 0.16) ;
+    position: sticky;
+    background-color: #FFFFFF;
+    top:0;
+    z-index: 10;
+}
+
+.container-header{
+    padding: 30px 30px 60px 30px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -38,13 +53,12 @@ main {
     flex-direction: column;
     align-items: center;
     margin: 0 auto;
-    border: 1px solid salmon;
 }
 
  main img{
-    border: 1px solid salmon;
     max-width: 450px;
     width: 100%;
+    padding-bottom: 50px;
 }
 
 .data-center, .data-left{
@@ -52,27 +66,25 @@ main {
     padding: 0px 0px 0px 0px;
     max-width: 450px;
     width: 100%; 
-    border: 1px solid salmon;
     margin: 0 auto;
 }
 
-
 .data-left h1{
-    font-size: 24px;
+    letter-spacing: 2px;
     font-weight: 500;
     padding: 20px 20px;
 }
 
 .data-center h2, .data-left h2{
-    font-size: 20px;
     font-weight: 500;
     padding: 20px 20px;
+    letter-spacing: 2px;
 }
 
 .data-center p, .data-left p{
     padding: 0px 20px 20px 20px;
     line-height: 1.5;
-    border: 1px solid salmon;
+    letter-spacing: 0.5px;
 }
 
 .buttons{
@@ -105,21 +117,24 @@ main {
 /* Feature */
 
 .feature{
-    border: 1px solid salmon;
+    padding: 150px 0px 0px 0px;
+    border: 1px salmon solid;
 }
 
 .detail{
-    border: 1px solid salmon;
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* margin: 0 auto; */
 }
 
 .detail img{
-    border: 1px solid salmon;
     max-width: 450px;
-    width: 100%;
+    width: 85%;
+    padding-bottom:10px ;
+}
+
+.detail .data-left button{
+    display: none;
 }
 
 h3{
@@ -130,8 +145,7 @@ h3{
 }
 
 .container-button{
-    border: 1px solid salmon;
-    margin: 30px auto 50px auto;
+    margin: 16px auto 42px auto;
     display: flex;
     flex-direction: column;
     border-bottom: 1px solid #b8b9bc;
@@ -144,20 +158,17 @@ h3{
 .first-button h3{
     border-bottom: 5px solid #FA5757;
     color: #000000;
-    border: 1px solid salmon;
 }
 
 .last-buttons {
     border-bottom: 1px solid #b8b9bc;
     border-top: 1px solid #b8b9bc;
     color: #93939a;
-    border: 1px solid salmon;
 }
 
-.last-buttons h3:hover{
+.container-question h3:hover, .last-buttons h3:hover{
     cursor: pointer;
     color: #FA5757;
-
 }
 
 /* Download */
@@ -169,14 +180,14 @@ h3{
     text-align: center;
     align-items: center;
     margin: 0 auto;
+    padding: 150px 0px 0px 0px;
 }
 
 .browser{
-    border: 1px salmon solid;
+
     display: flex;
     flex-direction: column;
     width: 90%;
-    /* align-items: center; */
 }
 
 .browser article{
@@ -185,7 +196,7 @@ h3{
     margin: 20px;
     padding: 45px 0px 15px 0px; 
     width: 90%;
-    max-width: 260px;
+    max-width: 250px;
     margin: 20px auto;
 }
 
@@ -206,8 +217,7 @@ h3{
 /* Questions */
 
 .question{
-    /* display: none !important; */
-    padding: 80px 0px 110px 0px;
+    padding: 150px 0px 120px 0px;
     border: 1px salmon solid;
     margin: 0 auto;
     text-align: center;
@@ -220,25 +230,21 @@ h3{
     border-bottom: 1px solid #b8b9bc;
     max-width: 450px;
     margin: 0 auto;
-    width: 100%;
+    width: 90%;
     text-align: start;
-    border: 1px solid salmon;
 }
 
-.container-question h4{
+.container-question h3{
     width: 95%;
     font-weight: 400;
-    font-size: 15px;
-    padding: 20px 10px;
+    font-size: 17px;
+    padding: 20px 0px;
 }
 
-.question button{
-  
+.question button{ 
     margin-top:50px;
     padding: 16px 25px;
 }
-
-
 
 /* contact */
 
@@ -330,16 +336,30 @@ footer h3{
 
 @media (min-width: 900px) {
     
-    /* Header */
-
+    h1{
+        font-size: 36px;
+    }
     
-    header{
-        width: 80%;
-        margin: 0 auto;
-        padding: 30px 0px;
+    h2{
+        font-size: 28px;
+    }
+    
+    h3{
+        font-size: 20px
+    }
+    
+    p{
+        font-size: 16px;
     }
 
-    
+    /* Header */
+
+    .container-header{
+        width: 85%;
+        margin: 0 auto;
+        padding: 30px 0px;
+        max-width: 1200px;
+    }
 
     ul{
         display: flex;
@@ -376,17 +396,24 @@ footer h3{
     /* Main */
     
     main{
+        height: calc(100vh - 95.6px);
         flex-direction: row-reverse;
         justify-content: space-around;
         padding: 0px 0px;
         max-width: 1200px;
-        
+        width: 85%;
         margin: 0 auto;
     }
 
+    .data-left h1{
+        padding-right: 40px;
+    }
+
+    main .data-left p{
+        padding-right: 90px;
+    }
 
     .data-left{
-       
         min-width: 450px;
         max-width: 600px;
         text-align: start;
@@ -401,6 +428,7 @@ footer h3{
         max-width: 600px;
         min-width: 450px;
         width: 100%;
+        margin-top:60px;
     }
 
     .white:hover{
@@ -414,19 +442,6 @@ footer h3{
         color: #5267DF;
     }
 
-    /* Feature */
-
-    .feature{
-            max-width: 1200px;
-            margin: 0 auto;
-    }
-
-    .feature img {
-        max-width: 600px;
-        min-width: 450px;
-        width: 100%;
-    }
-
     .buttons{
         justify-content: start;
     }
@@ -435,20 +450,19 @@ footer h3{
         margin-left: 20px;
     }
 
-    .detail{
-        flex-direction: row;
-        justify-content: center;
+    /* Feature */
+
+    .feature{
+        height: 100vh;
+        max-width: 1200px;
+        padding: 0px 0px 10px 0px;
+        margin: 0 auto;
+        width: 85%;
     }
 
-    .container-button{
-        flex-direction: row;
-        max-width: 1200px;
-        justify-content: space-between;
-        border: 1px solid salmon;
-    }
-    .container-button div{
-        width: 100%;
-        
+    .feature .data-center p{
+        width: 45%;
+        margin: 0 auto;
     }
 
     .last-buttons {
@@ -461,32 +475,89 @@ footer h3{
         color: #FA5757;
     }
 
+    .container-button{
+        flex-direction: row;
+        max-width: 1200px;
+        justify-content: space-between;
+        border-top: 1px solid transparent;
+    }
+
+    .container-button div{
+        width: 100%; 
+    }
+
+    .detail{
+        flex-direction: row;
+        justify-content: center;
+        
+    }
+
+    .detail .data-left {
+        padding: 0px 30px 0px 80px;
+    }
+
+    .detail img {
+        max-width: 600px;
+        min-width: 450px;
+        width: 50%;
+      
+    }
+
+    .detail .data-left button{
+        display: block;
+    }
+
 /* Download */
 
-.download {
-    max-width: 1200px;
-}
+    .download {
+        height: 100vh;
+        max-width: 1200px;
+        width: 85%;
+        padding: 10px 0px 0px 0px;
+    } 
+
+    .download .data-center p{
+        width: 45%;
+        margin: 0 auto;
+    } 
+
     .browser{
         flex-direction: row;
         max-width: 900px;
+       
     }
 
     .browser {
         align-items: flex-start;
+       
+        width: 100%;
+    }
+
+    .browser article {
+        width: 100%;
+        min-width: 100px;
     }
 
     .browser .second{
-        margin-top: 50px;
+        margin-top: 60px;
     }
 
     .browser .third {
-        margin-top: 70px; 
+        margin-top: 80px; 
     }
 
 /* Question */
     .question{
-    max-width: 1200px ;
+        height: 100vh;
+        max-width: 1200px ;
+        width: 85%;
+        padding: 10px 20px 0px 20px;
     }
+
+    .question .data-center p{
+        width: 45%;
+        margin: 0 auto;
+    } 
 
     .container-question div{
         
