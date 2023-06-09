@@ -328,6 +328,11 @@ footer{
     padding: 70px 0px 70px 0px;
 }
 
+footer div {
+    display: flex;
+    align-items: center;
+}
+
 footer div h3{
     padding: 20px 0px;
     color:#FAFDFF;
@@ -617,7 +622,8 @@ footer div:first-child{
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
-        padding: 20px 120px;
+       
+        padding: 10px 120px;
     }
 
     footer div h3{
