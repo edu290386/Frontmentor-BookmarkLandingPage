@@ -25,11 +25,13 @@ p{
     color: #93939a;
 }
 
+a{
+    text-decoration: none;
+}
+
 /* Header */
 
-li a{
-  text-decoration: none;  
-}
+
 
 header{
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
@@ -346,6 +348,10 @@ footer div h3{
     color:#FAFDFF;
     font-size: 17px;
     font-weight: 300;
+}
+
+footer div h3 a{
+    color:#FAFDFF;
 }
 
 footer div:first-child{
