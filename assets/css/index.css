@@ -43,7 +43,7 @@ header{
 }
 
 .container-header{
-    padding: 20px 30px 20px 30px;
+    padding: 12px 30px 12px 30px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -64,6 +64,7 @@ main {
     align-items: center;
     margin: 0 auto;
     padding: 50px 0px 0px 0px;
+    border: 1px salmon solid;
 }
 
  main img{
@@ -130,7 +131,7 @@ main {
 
 .feature{
     padding: 150px 0px 0px 0px;
-    scroll-margin-top: 4rem;
+    scroll-margin-top: -7rem;
 }
 
 .detail{
@@ -435,7 +436,7 @@ footer div:first-child{
     /* Main */
     
     main{
-        height: calc(100vh - 75.6px);
+        height: calc(100vh - 59.6px);
         flex-direction: row-reverse;
         justify-content: space-around;
         padding: 0px 0px;
@@ -499,6 +500,7 @@ footer div:first-child{
         padding: 0px 0px 10px 0px;
         margin: 0 auto;
         width: 85%;
+        scroll-margin-top: 3rem;
     }
 
     .feature .data-center p{
