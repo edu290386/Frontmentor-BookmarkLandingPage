@@ -35,16 +35,18 @@ a{
 
 
 header{
-    padding: 20px 30px 0px 30px;
-    background-color: #2a2d47;
-    
+    padding: 10px 30px 0px 30px;
+    background-color: #FFFFFF;
+    position: sticky;
+    top:0;
+    border: 1px salmon solid;
 }
 
 .container-header{
     display: flex;
     flex-direction: row;
     justify-content: space-between;    
-    padding-bottom: 20px;
+    padding-bottom: 10px;
 }
 
 .container-header div{
@@ -72,10 +74,6 @@ li{
     padding: 20px;
 }
 
-.container-header div img{
-    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(21deg) brightness(97%) contrast(103%);
-}
-
 .nav-menu{
     display: none;
 }
@@ -91,7 +89,7 @@ li{
     opacity: 0.9;
     width: 100%;
     left: 0px;
-    top:65px;
+    top:45px;
     background-color: #2a2d47;
     overflow: hidden;
 }
@@ -117,7 +115,7 @@ main {
     margin: 0 auto;
     padding: 50px 0px 0px 0px;
     border: 1px salmon solid;
-    height: calc(100vh - 65px);
+    height: calc(100vh - 46.6px);
 }
 
  main img{
@@ -456,7 +454,7 @@ footer div:first-child{
         margin: 0 auto;
         width: 85%;
         height: 60px;
-        background-color: #FFFFFF;
+       
     }
 
     .container-header{
@@ -507,10 +505,6 @@ footer div:first-child{
         color: #FA5757;
     }
 
-   .container-header div img{
-        filter: none;
-    }
-
     .hamburger, .exit{
         display: none;
     } 
@@ -529,7 +523,7 @@ footer div:first-child{
     /* Main */
     
     main{
-        height: calc(100vh - 59.6px);
+        height: calc(100vh - 60px);
         flex-direction: row-reverse;
         justify-content: space-around;
         padding: 0px 0px;
@@ -593,7 +587,7 @@ footer div:first-child{
         padding: 0px 0px 10px 0px;
         margin: 0 auto;
         width: 85%;
-        scroll-margin-top: 3rem;
+        scroll-margin-top: 2.5rem;
     }
 
     .feature .data-center p{
