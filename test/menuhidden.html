@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/assets/css/menuhidden.css" />
+    <link rel="stylesheet" href="../assets/css/menuhidden.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;500&display=swap" rel="stylesheet">
@@ -12,45 +12,43 @@
   </head>
   <body>
     <header>
-        <div>
-            <div class="menu-logo">
-                <img src="./assets/img/logo-bookmark.svg" alt="">
-                <img width="18px" height="18px" src="./assets/img/icon-close.svg" alt="">  
+        <section class="container-header"></div>
+            <div>
+                <img src="../assets/img/logo-bookmark.svg" alt="">
+            </div>       
+            <div>
+                <div class="exit">X</div>
+                <img class="hamburger" width="18px" height="18px" src="../assets/img/icon-hamburger.svg" alt="">
             </div>
-            <nav class="menu-option"">
+        </section>    
+        <nav class="nav-menu">
+            <ul>
+                <li>FEATURES</li>
+                <li>PRICING</li>
+                <li>CONTACT</li>
+                <li class="login">LOGIN</li>
+            </ul>
+            <div class="media">
                 <div>
-                    <ul>
-                        <li>
-                            <div>
-                                FEATURES
-                            </div>
-                        </li>
-                        <li>
-                            <div>
-                                PRICING
-                            </div>
-                        </li>
-                        <li>
-                            <div>
-                                CONTACT
-                            </div>
-                        </li>
-                        <li>
-                            <div>
-                                LOGIN
-                            </div>
-                        </li>
-                    </ul>
+                    <img src="../assets/img/icon-facebook.svg" alt="">
                 </div>
-                <div class="media">
-                    <img src="./assets/img/icon-facebook.svg" alt="">
-                    <img src="./assets/img/icon-twitter.svg" alt="">
-                </div>            
-            </nav>
-        </div>    
+                <div>
+                    <img src="../assets/img/icon-twitter.svg" alt="">
+                </div>
+            </div>
+        </nav>          
     </header>
-    <div class="resto">
-
-    </div>
+    <main id="home">
+        <img src="../assets/img/illustration-hero.svg" alt="">  
+        <article class="data-left">
+                <h1>A Simple Bookmark Manager</h1>
+                <p>A clean and simple interface to organize your favourite websites. Open a new browser tab and see your sites load instantly. Try it for free.</p>
+                <div class="buttons">
+                    <button class="btn purple">Get it on Chrome</button>
+                    <button class="btn white">Get it on Firefox</button>
+                </div>
+        </article>
+    </main>
   </body>
+  <script src="../menuhidden.js"></script>
 </html>
