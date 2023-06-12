@@ -191,10 +191,11 @@ main {
     align-items: center;
 }
 
-.detail img{
+#img1st-feature, #img2nd-feature, #img3rd-feature{
     max-width: 450px;
     width: 85%;
     padding-bottom:10px ;
+    height: 237px;
 }
 
 .detail .data-left button{
@@ -224,16 +225,29 @@ main {
     color: #000000;
 }
 
-.last-buttons {
+.second-buttons, .last-buttons {
     border-bottom: 1px solid #b8b9bc;
     border-top: 1px solid #b8b9bc;
     color: #93939a;
 }
 
-.container-question h3:hover, .last-buttons h3:hover{
+.second-buttons h3:hover, .last-buttons h3:hover{
     cursor: pointer;
     color: #FA5757;
 }
+
+.container-question h3:hover{
+    cursor: pointer;
+    color: #FA5757;
+}
+
+#img2nd-feature, #art2nd-feature{
+    display: none;
+} 
+
+#img3rd-feature, #art3rd-feature{
+    display: none;
+} 
 
 /* Download */
 
@@ -588,6 +602,7 @@ footer div:first-child{
         margin: 0 auto;
         width: 85%;
         scroll-margin-top: 2.5rem;
+        border: 1px salmon solid;
     }
 
     .feature .data-center p{
@@ -595,14 +610,9 @@ footer div:first-child{
         margin: 0 auto;
     }
 
-    .last-buttons {
+    .second-buttons, .last-buttons {
         border-bottom: 1px solid transparent;
         border-top: 1px solid transparent;
-    }
-    
-    .last-buttons h3:hover{
-        cursor: pointer;
-        color: #FA5757;
     }
 
     .container-button{
@@ -626,11 +636,11 @@ footer div:first-child{
         padding: 0px 30px 0px 80px;
     }
 
-    .detail img {
+    #img1st-feature, #img2nd-feature, #img3rd-feature{
         max-width: 600px;
         min-width: 450px;
         width: 50%;
-      
+        height: 400px;
     }
 
     .detail .data-left button{
