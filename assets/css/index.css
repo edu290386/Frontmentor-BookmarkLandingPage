@@ -39,7 +39,6 @@ header{
     background-color: #FFFFFF;
     position: sticky;
     top:0;
-    border: 1px salmon solid;
 }
 
 .container-header{
@@ -114,7 +113,6 @@ main {
     align-items: center;
     margin: 0 auto;
     padding: 50px 0px 0px 0px;
-    border: 1px salmon solid;
     height: calc(100vh - 46.6px);
 }
 
@@ -310,6 +308,17 @@ main {
     text-align: start;
 }
 
+.answer1, .answer2, .answer3, .answer4{
+    margin: 0 auto;
+    max-width: 450px;
+    width: 90%;
+    font-size: 15px;
+    text-align: left;
+    line-height: 2;
+    display: none;
+    padding: 20px 0px 0px 0px;
+}
+
 .container-question h3{
     width: 95%;
     font-weight: 400;
@@ -322,10 +331,22 @@ main {
     padding: 16px 25px;
 }
 
-.container-question div img:hover{
+.show-answer{
+    display: block;
+}
+
+.show-arrow{
     transform: rotate(180deg);
     filter: invert(48%) sepia(53%) saturate(3690%) hue-rotate(329deg) brightness(98%) contrast(96%); 
     cursor: pointer;
+}
+
+.data-center, .data-left{
+    text-align: center;
+    padding: 0px 0px 0px 0px;
+    max-width: 450px;
+    width: 100%; 
+    margin: 0 auto;
 }
 
 /* contact */
@@ -602,7 +623,6 @@ footer div:first-child{
         margin: 0 auto;
         width: 85%;
         scroll-margin-top: 2.5rem;
-        border: 1px salmon solid;
     }
 
     .feature .data-center p{
@@ -687,10 +707,10 @@ footer div:first-child{
 /* Question */
 
     .question{
-        height: 100vh;
+        
         max-width: 1200px ;
         width: 85%;
-        padding: 10px 20px 0px 20px;
+        padding: 10px 20px 120px 20px;
     }
 
     .question .data-center p{
@@ -699,6 +719,10 @@ footer div:first-child{
     } 
 
     .container-question div{
+        max-width: 500px; 
+    }
+
+    .answer1, .answer2, .answer3, .answer4{
         max-width: 500px;
     }
 
