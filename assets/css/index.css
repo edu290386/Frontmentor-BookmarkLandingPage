@@ -372,22 +372,17 @@ main {
     line-height: 1.5;
 }
 
-.email-input:invalid {
+.email-input:focus:invalid {
     border: 3px solid #FA5757;
+    background: url("../img/icon-error.svg") no-repeat 95% 50% #FFFFFF;
+    background-position: right;
 }
 
 .email-input:focus {
     outline: none;    
 }
 
-.email-input::after {
-    content: "Invalid email address";
-    color: red;
-    font-size: 12px;
-    position: absolute;
-    bottom: 10px;
-    right: 10px;
-}
+
 
 .contact div{
     display: flex;
@@ -412,7 +407,6 @@ main {
     font-size: 15px;
     color: #b8b9bc;
     border: 3px solid transparent;
-    
 }
 
 /* Footer */
@@ -657,10 +651,10 @@ footer div:first-child{
     }
 
     #img1st-feature, #img2nd-feature, #img3rd-feature{
-        max-width: 600px;
-        min-width: 450px;
+        max-width: 550px;
+        min-width: 380px;
         width: 50%;
-        height: 400px;
+        height: 380px;
     }
 
     .detail .data-left button{

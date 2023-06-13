@@ -20,6 +20,9 @@ const question3 = document.querySelector(".question3");
 const answer3 = document.querySelector(".answer3");
 const question4 = document.querySelector(".question4");
 const answer4 = document.querySelector(".answer4");
+const button = document.querySelector(".btn-contact");
+const input = document.querySelector("input");
+const message = document.querySelector(".messagefail");
 
 hamburger.addEventListener("click", () => {
     nav.classList.toggle("showmenu");
@@ -86,4 +89,19 @@ question4.addEventListener("click", () => {
     answer4.classList.toggle("show-answer");
     const arrow = question4.querySelector("img");
     arrow.classList.toggle("show-arrow");
+});
+
+
+console.log(button);
+button.addEventListener("click", () =>{
+    
+    if (!input.validity.valid){ 
+        message.innerText = input.value;
+        input.value = "";
+    }
+    else {
+        input.value = "";
+        message.innerText = input.value;
+    }
+
 });
