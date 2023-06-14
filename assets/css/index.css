@@ -383,11 +383,14 @@ main {
 
 .buttonContainer div{
     margin-bottom: 20px;
+    position: relative;
 }
 
 .email-input{
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
     padding: 20px 20px;
     margin: 0px auto;
     font-size: 15px;
@@ -397,13 +400,13 @@ main {
 }
 .email-input:invalid {
     border: 2px solid #FA5757;
-    background: url("../img/icon-error.svg") no-repeat 95% 50% #FFFFFF;
+    background-color:  #FFFFFF;
     background-position: right;
     
 }
 
 .email-input:focus{
-    outline: none;
+    outline: 2px solid transparent;
 }
 
 .messageFail{
@@ -416,12 +419,22 @@ main {
     width: 90%;
     text-align: left;
     padding-left: 20px;
-    /* visibility: hidden; */
+    visibility: hidden;
 }
 
 .messageFail small{
-    color: #FFFFFF;
-    
+    color: #FFFFFF; 
+}
+
+.error-message{
+    visibility: hidden;
+    position: absolute;
+    right:20px;
+    top: 20px
+}
+
+.hidde{
+    visibility: visible;
 }
 
 .btn-contact{
@@ -755,15 +768,12 @@ footer div:first-child{
         margin: 0 auto;
         letter-spacing: 1.5px;
         font-size: 24px;
-         border: 1px salmon solid;
     }
 
     .buttonContainer{
         flex-direction: row;
         justify-content: center;
         max-width: 500px ;
-      
-        border: 1px salmon solid;
     }
 
     .buttonContainer div{
@@ -793,6 +803,10 @@ footer div:first-child{
         margin-right: 30px;
     }
     
+    .error-message{
+        right:32px;
+        top: 11px
+    }
 
 /* Footer */
 

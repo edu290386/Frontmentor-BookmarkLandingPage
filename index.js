@@ -21,8 +21,9 @@ const answer3 = document.querySelector(".answer3");
 const question4 = document.querySelector(".question4");
 const answer4 = document.querySelector(".answer4");
 const button = document.querySelector(".btn-contact");
-const input = document.querySelector("input");
-const message = document.querySelector(".messagefail");
+const input = document.querySelector(".email-input");
+const message = document.querySelector(".messageFail");
+const imgerror = document.querySelector(".error-message");
 
 hamburger.addEventListener("click", () => {
     nav.classList.toggle("showmenu");
@@ -94,14 +95,16 @@ question4.addEventListener("click", () => {
 
 console.log(button);
 button.addEventListener("click", () =>{
-    
+    console.log(message);
     if (!input.validity.valid){ 
-        message.innerText = input.value;
+        message.classList.add("hidde");
+        imgerror.classList.add("hidde");
         input.value = "";
+        console.log(message);
     }
     else {
         input.value = "";
-        message.innerText = input.value;
+        message.classList.remove("hidde");
+        imgerror.classList.remove("hidde");
     }
-
 });
